@@ -1,0 +1,283 @@
+body {
+  background:url("./images/bg.jpg") no-repeat, rgba(231, 126, 2, 0.8);
+  background-size: cover;
+  background-blend-mode:darken;
+}
+
+.middlecard{
+  height: 50%;
+  width: 30%;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.3) 0px -12px 30px, rgba(0, 0, 0, 0.5) 0px 4px 6px, rgba(0, 0, 0, 0.5) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.middlecard label {
+  margin-left: 5px;
+}
+.middlecard hr {
+    box-shadow: rgba(0, 0, 0,0.3) 0px 2px 1px;
+
+}
+#mail{
+  width: 95%;
+  height: 35px;
+  border: 0;
+  border-bottom: 1px solid black;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+#pass{
+  width: 95%;
+  height: 35px;
+  border: 0;
+  border-bottom: 1px solid black;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#bton{
+  display: block;
+  width: 50%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 7px;
+  background-color: black;
+  margin: 5px auto auto;
+}
+#bton:hover{
+  color: black;
+  background-color: white;
+}
+.title{
+  text-align: center;
+}
+.other{
+  width: 70%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 30px auto auto;
+}
+.other span{
+  background: #fff;
+  padding: 1px 10px;
+}
+.Olink{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.first {
+  flex-basis: 33%;
+  text-align: center;
+}
+.second{
+  flex-basis: 34%;
+  text-align: center;
+}
+.third{
+  flex-basis: 33%;
+  text-align: center;
+}
+
+.last {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 17px;
+    font-family: "Droid Serif", serif;
+}
+.Olink input{
+  display: none;
+}
+.first{
+  position: relative;
+}
+.first img.GBimg {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 50%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.first:hover img.GBimg{
+  opacity: 1;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 23px;
+}
+#imgbton{
+  border: none;
+}
+.first img.Gimg {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 50%;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity .2s;
+}
+.first:hover img.Gimg{
+  opacity: 0;
+}
+.second {
+  position: relative;
+}
+.second img.Fbimg {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  bottom: 0;
+  right: 50%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.second:hover img.Fbimg{
+  opacity: 1;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.second img.Fimg {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  bottom: 0;
+  right: 50%;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity .2s;
+}
+.third{
+  position: relative;
+}
+.third img.GTBimg {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 24%;
+  bottom: 0;
+  right: 50%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.third:hover img.GTBimg{
+  opacity: 1;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 23px;
+}
+.third img.GTimg {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 24%;
+  bottom: 0;
+  right: 50%;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity .2s;
+}
+.first:hover img.GTimg{
+  opacity: 0;
+}
+.log {
+  font-size: 20px;
+  letter-spacing: 10px;
+  height: 50%;
+  width: 57%;
+  margin: 100px auto auto;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.3)
+}
+.log span {
+  position: relative;
+  font-family: 'Alfa Slab One',Serif cursive;
+  display: inline-block;
+  color: black;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(2s);
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-15px)
+  }
+}
+.log button {
+  margin-left: 50%;
+  display: block;
+  width: 20%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 7px;
+  background-color: black;
+  margin: 5px auto auto;
+}
+.log button:hover {
+  color: black;
+  background-color: white;
+}
+.log h4 {
+  margin-left: 10px;
+  letter-spacing: 5px;
+}
+.log h5 {
+  margin-top: 5%;
+  margin-left: 5%;
+  border-bottom: 1px solid black;
+  width: 90%;
+}
+.log h5:hover {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 800px){
+  .middlecard{
+    width: 90%;
+    height: 100%;
+    margin: 100px auto auto;
+    }
+}
+.loader {
+  margin: auto;
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #0f1b1e; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
